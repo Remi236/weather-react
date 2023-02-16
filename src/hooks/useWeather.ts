@@ -12,9 +12,9 @@ export const useWeather = () => {
       navigator.geolocation.getCurrentPosition((position) => {
         const { latitude, longitude } = position.coords;
         const paramsObject = {
-          lat: latitude,
-          lon: longitude,
-          appid: process.env.REACT_APP_API_KEY,
+          location: `${latitude},${longitude}`,
+          units: 'metric',
+          apikey: process.env.REACT_APP_API_KEY,
         };
         api<WeatherItem>('GET', params(API.weather, paramsObject)).then(
           (resObject) => {

@@ -3,5 +3,5 @@ export const ROUTE = {
 };
 
 export const API = {
-  weather: 'weather',
+  weather: 'weather/realtime',
 };

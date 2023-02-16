@@ -1,0 +1,15 @@
+.weather {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.weather__attr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weather__attr--title {
+  font-weight: 700;
+}

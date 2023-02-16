@@ -1,5 +1,6 @@
 import './App.css';
 import Weather from './components/Weather';
+import './styles/weather.css';
 
 const App = () => (
   <div className="App">
